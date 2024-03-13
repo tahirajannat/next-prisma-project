@@ -1,7 +1,7 @@
-// NewArival.js
+'use client';
 
-('use client');
-import { useState } from 'react';
+import { useState } from 'react'; // Correct import statement
+
 import ProductCard from '../common/ProductCard';
 import Tab from '../common/Tab';
 import Tabs from '../common/Tabs';
@@ -17,7 +17,7 @@ export const products = [
         manage_stock: true,
         stock_status: 'instock',
 
-        categories: [
+        category: [
             {
                 id: 1,
                 name: 'Electronics',

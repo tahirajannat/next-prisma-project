@@ -1,3 +1,5 @@
+'use client';
+
 import Ribbon from './Ribbon';
 
 export default function ProductCard({ items, startIndx, endIndx }) {

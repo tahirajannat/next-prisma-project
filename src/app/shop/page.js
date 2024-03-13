@@ -1,6 +1,7 @@
 import Brands from '../components/common/Brands';
 import HeroBanner from '../components/common/HeroBanner';
 import PopularBlock from '../components/common/PopularBlock';
+import BestSeller from '../components/section/BestSeller';
 import NewArival from '../components/section/NewArival';
 export const products = [
     {
@@ -55,6 +56,7 @@ export default function Shop() {
             <Brands />
             <PopularBlock />
             <NewArival />
+            <BestSeller />
             {/* <Button
                 onClick={handleChange}
                 buttonStyle='buttonPrimary'

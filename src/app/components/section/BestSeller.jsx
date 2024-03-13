@@ -1,3 +1,5 @@
+'use client';
+import Image from 'next/image';
 import { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -5,17 +7,16 @@ import 'swiper/css/pagination';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import Popular1 from '../../../assets/image-product-1.png';
-import Popular2 from '../../../assets/image-product-2.png';
-import Popular3 from '../../../assets/image-product-3.png';
-import Popular4 from '../../../assets/image-product-4.png';
-import Ribbon from '../../common/Ribbon';
-import Tab from '../../common/Tab';
-import Tabs from '../../common/Tabs';
+import Popular1 from '../../assets/image-product-1.png';
+import Popular2 from '../../assets/image-product-2.png';
+import Popular3 from '../../assets/image-product-3.png';
+import Popular4 from '../../assets/image-product-4.png';
+import Ribbon from '../common/Ribbon';
+import Tab from '../common/Tab';
+import Tabs from '../common/Tabs';
 
 // Install Swiper modules
 // SwiperCore.use([Navigation, Pagination]);
-('use client');
 export default function BestSeller() {
     const products = [
         {
@@ -164,7 +165,7 @@ export default function BestSeller() {
                                     style={{ width: '100%' }} //
                                 >
                                     <div>
-                                        <img
+                                        <Image
                                             className='h-full w-full object-cover'
                                             src={product.src}
                                             alt=''
