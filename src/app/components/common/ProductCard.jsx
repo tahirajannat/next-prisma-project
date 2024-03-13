@@ -1,7 +1,6 @@
 'use client';
 
 import Ribbon from './Ribbon';
-
 export default function ProductCard({ items, startIndx, endIndx }) {
     const sortedItems = [...items].sort((a, b) => {
         const dateA = new Date(a.updated_at.replace(/(at|am|pm)/g, '').trim());
